@@ -1,0 +1,34 @@
+.TodoItem {
+  width: 100%;
+  padding: var(--padding-large);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TodoItem:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, .3);
+}
+
+.TodoItem:hover .TodoDeleteButton {
+  display: inline-block;
+}
+
+.TodoDeleteButton {
+  display: none;
+}
+
+.TodoItem.Completed .TodoItemText {
+  text-decoration: line-through;
+  color: lightgrey;
+}
+
+.RoundedCheckbox {
+  margin-right: var(--margin-medium);
+}
+
+.RightBlock {
+  display: flex;
+  align-items: center;
+}

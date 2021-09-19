@@ -1,0 +1,16 @@
+.Header {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: var(--padding-large);
+  border-bottom: 1px solid lightgrey;
+}
+
+.Header input {
+  font-size: 18px;
+}
+
+.Header .RoundedCheckbox {
+  margin-right: var(--margin-medium);
+}

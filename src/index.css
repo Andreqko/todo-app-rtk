@@ -1,3 +1,16 @@
+html {
+  --border-radius:  5px;
+  --padding-small:  4px;
+  --padding-medium: 8px;
+  --padding-large:  16px;
+  --padding-giant:  24px;
+  --margin-small:   4px;
+  --margin-medium:  8px;
+  --margin-large:   16px;
+  --margin-giant:   24px;
+  --gradient:       radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +23,57 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  background: rgb(63,94,251);
+  background: var(--gradient);
+  min-height: 100vh;
+}
+
+input, input:active, input:hover, input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+input[type="text"] {
+  border-radius: var(--border-radius);
+  width: 100%;
+  font-size: 18px;
+}
+
+input::placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+button, button:hover, button:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: inherit;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+h1, h2, p, input, ul, ol, button {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+h1 {
+  margin: 20px auto;
 }

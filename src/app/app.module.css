@@ -1,0 +1,11 @@
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20vh 20px;
+}
+
+.App .AppTitle {
+  font-size: 48px;
+  color: white;
+  letter-spacing: 10px;
+}

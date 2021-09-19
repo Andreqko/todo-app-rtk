@@ -1,0 +1,35 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: darkgrey;
+  padding: var(--padding-large) var(--padding-medium);
+  font-weight: 600;
+  background: #ffffff;
+  border-top: 1px solid lightgrey;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.FilterButton {
+  text-transform: capitalize;
+}
+
+.Active .FilterButton {
+  color: deepskyblue;
+}
+
+.FilterButton:hover,
+.FilterButton:active {
+  color: slategrey;
+}
+
+.FiltersList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FiltersList .FiltersListItem:not(:last-of-type) {
+  margin-right: 10px;
+}

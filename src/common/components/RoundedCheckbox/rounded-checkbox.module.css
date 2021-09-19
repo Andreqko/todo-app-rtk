@@ -1,0 +1,49 @@
+.RoundedCheckbox {
+  line-height: 0;
+}
+
+.RoundedCheckbox input {
+  display: none;
+}
+
+.RoundedCheckbox label {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.RoundedCheckbox label:before,
+.RoundedCheckbox label:after {
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.RoundedCheckbox label:before {
+  content: '';
+  border: 1px solid lightgrey;
+  display: inline-block;
+}
+
+.RoundedCheckbox label:after {
+  content: "\2713";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--gradient);
+  color: #ffffff;
+  font-weight: 600;
+  transition: opacity .4s ease;
+}
+
+.RoundedCheckbox input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}

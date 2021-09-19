@@ -1,0 +1,21 @@
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.TodoPlaceholder {
+  text-align: center;
+  font-size: 24px;
+  padding: var(--margin-giant) 0;
+  background: #ffffff;
+}
+
+.TodoItem:not(:last-of-type) {
+  margin-top: -1px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.TodoItem.DraggedOver {
+  background: rgba(15, 143, 255, .1);
+}
